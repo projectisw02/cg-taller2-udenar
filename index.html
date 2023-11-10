@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Registro</title>
+</head>
+
+<body>
+
+  <header>
+    <nav id="nav">
+      
+
+      <label for="toggle_menu" id="icon_menu">&#9776;</label>
+
+      <div id="img_logo_container">
+        <img id="img_logo" src="./img/logo.png" alt="">
+        <p id="text_logo">FastSoft</p>
+      </div>
+
+      <input type="checkbox" id="toggle_menu">
+      <ul id="nav_ul">
+        <li class="nav_li hide-on-small-screen hide-on-medium-screen">
+          <a class="nav_link" href="#">INICIO</a>
+        </li>
+        <li class="nav_li hide-on-small-screen hide-on-medium-screen">
+          <a class="nav_link " href="#">INFOMACIÓN</a>
+        </li>
+        <li class="nav_li hide-on-small-screen">
+          <a class="nav_link " href="#">CREAR CUENTA</a>
+        </li>
+        <li id="nav_li_login" class="nav_li">
+          <a id="nav_link_login" class="nav_link" href="#">INICIAR SESIÓN</a>
+        </li>
+      </ul>
+
+    </nav>
+  </header>
+  
+  <main id="main_container">
+    <div id="description_container">
+      <h1>¡Registra tu cuenta ahora!</h1>
+      <p>Bienvenido a nuestra plataforma, donde encontrarás una experiencia única y emocionante. Al registrar una cuenta, te unes a una comunidad de individuos apasionados y te damos la bienvenida a un mundo de posibilidades. Con una cuenta, tendrás acceso a una amplia gama de funciones y beneficios exclusivos que mejorarán tu vida en línea.</p>
+    </div>
+    <form id="register_form">
+      <div id="title_register_form_container">
+        <p id="title_register_form_p">Registrar una nueva cuenta</p>
+      </div>
+      <div id="register_container">
+        <div class="register_cols">
+          <label class="label_register" for="input_first_name">Nombre(s):</label>
+          <input class="input_register" id="input_first_name" type="text" name="first_name" required>
+
+          <label class="label_register" for="input_last_name">Apellido(s):</label>
+          <input class="input_register" id="input_last_name" type="text" name="last_name" required>
+        </div>
+
+        <div class="register_cols">
+          <label class="label_register" for="input_email">Correo electrónico:</label>
+          <input class="input_register" id="input_email" type="email" name="email" required>
+
+          <label class="label_register" for="input_password">Password:</label>
+          <input class="input_register" id="input_password" type="password" name="password" required>
+        </div>
+      </div>
+
+      <button id="button_form_submit" type="submit">Crear nueva cuenta</button>
+    </form>
+  </main>
+
+</body>
+
+</html>
